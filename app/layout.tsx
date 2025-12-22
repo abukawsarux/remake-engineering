@@ -14,9 +14,9 @@ const merriweather = Merriweather({
 });
 
 export const metadata: Metadata = {
-  title: "McCulloch Law P.A",
-  description: "McCulloch Law P.A website",
-  metadataBase: new URL("https://mccullochlawpa-website.vercel.app"),
+  title: "Remake Engineering",
+  description: "We are Expert in RTK Survey, Digital Land Survey & Soil test.",
+  metadataBase: new URL("https://remakeengineering.vercel.app/"),
   alternates: {
     canonical: "/",
     languages: {
@@ -38,7 +38,7 @@ export default function RootLayout({
     <html lang="en" className={merriweather.className}>
       <body className="bg-white text-[#0B0C0E]">
         <Providers>
-        <CursorFollower />
+          <CursorFollower />
           <Navbar />
           <main>{children}</main>
           <Footer />

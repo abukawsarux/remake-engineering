@@ -66,7 +66,7 @@ export default function BlogPage({ blogPost }: { blogPost: any }) {
             <Reveal tag="h2" y={100} opacityFrom={0} duration={3}>
               <h2 className="text-3xl md:text-4xl font-bold text-black text-center">
                 Top&nbsp;
-                <span className="text-[#BA8E2D]">Blogs&nbsp;</span> Related To
+                <span className="text-[#FC860A]">Blogs&nbsp;</span> Related To
                 Law, Cases & Consulting
               </h2>
             </Reveal>
@@ -78,7 +78,7 @@ export default function BlogPage({ blogPost }: { blogPost: any }) {
           {posts.map((blog: any, index: number) => (
             <Reveal key={index} y={100} opacityFrom={0} duration={3}>
               <Link href={`/blogs/${blog.slug}`} className="block h-full group">
-                <div className="bg-white rounded-2xl shadow-sm hover:shadow-md transition flex flex-col text-center border border-gray-100 h-full cursor-pointer hover:bg-[#BA8E2D] hover:scale-105 transform duration-200">
+                <div className="bg-white rounded-2xl shadow-sm hover:shadow-md transition flex flex-col text-center border border-gray-100 h-full cursor-pointer hover:bg-[#FC860A] hover:scale-105 transform duration-200">
                   <Image
                     src={blog.image}
                     alt={blog.title}
@@ -103,7 +103,7 @@ export default function BlogPage({ blogPost }: { blogPost: any }) {
                     </div>
 
                     <div>
-                      <span className="px-6 py-3 bg-[#BA8E2D] text-white inline-flex items-center gap-2 rounded-sm group-hover:bg-white group-hover:text-[#BA8E2D] mt-4 transition">
+                      <span className="px-6 py-3 bg-[#FC860A] text-white inline-flex items-center gap-2 rounded-sm group-hover:bg-white group-hover:text-[#FC860A] mt-4 transition">
                         Read More <IoIosArrowForward />
                       </span>
                     </div>

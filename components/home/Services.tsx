@@ -82,9 +82,9 @@ export default function Services() {
           {services.map((service) => (
             <Reveal key={service.slug} y={100} opacityFrom={0} duration={3}>
               <Link href={`/practice/${service.slug}`} className="block h-full">
-                <div className="group bg-white hover:bg-[#BA8E2D] duration-300 rounded-2xl shadow-sm hover:shadow-md transition p-6 lg:p-10 flex flex-col items-center text-center border border-gray-100 h-full cursor-pointer hover:scale-105 transform ">
+                <div className="group bg-white hover:bg-[#FC860A] duration-300 rounded-2xl shadow-sm hover:shadow-md transition p-6 lg:p-10 flex flex-col items-center text-center border border-gray-100 h-full cursor-pointer hover:scale-105 transform ">
                   <div
-                    className="w-16 h-16 rounded-xl overflow-hidden flex justify-center items-center shadow-lg text-[#BA8E2D]
+                    className="w-16 h-16 rounded-xl overflow-hidden flex justify-center items-center shadow-lg text-[#FC860A]
                   group-hover:bg-white duration-300"
                   >
                     <FaBook size={24} />

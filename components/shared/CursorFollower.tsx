@@ -21,9 +21,9 @@ export default function CursorFollower() {
       }}
     >
       {/* Outline */}
-      <div className="absolute w-4 h-4 rounded-full border border-[#BA8E2D]"></div>
+      <div className="absolute w-4 h-4 rounded-full border border-[#FC860A]"></div>
       {/* Solid circle */}
-      <div className="w-2 h-2 rounded-full bg-[#BA8E2D]"></div>
+      <div className="w-2 h-2 rounded-full bg-[#FC860A]"></div>
     </div>
   );
 }

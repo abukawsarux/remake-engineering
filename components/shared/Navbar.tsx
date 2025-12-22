@@ -10,7 +10,7 @@ import { IoIosCall } from "react-icons/io";
 const Navbar: React.FC = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
-  const [practiceOpen, setPracticeOpen] = useState(false); // mobile dropdown
+  const [servicesOpen, setServicesOpen] = useState(false);
   const pathname = usePathname();
 
   useEffect(() => {
@@ -21,48 +21,49 @@ const Navbar: React.FC = () => {
 
   const navItems = [
     { href: "/", label: "Home" },
-    { href: "/about", label: "About The Attorney" },
-    { href: "/practice", label: "Practice Areas", dropdown: true },
-    { href: "/testimonials", label: "Testimonials" },
-    { href: "/blogs", label: "Blogs" },
+    { href: "/about", label: "About Us" },
+    {
+      href: "/services",
+      label: "Our Services",
+      dropdown: true,
+    },
+    { href: "/equipment", label: "Our Equipment" },
+    { href: "/projects", label: "Our Projects" },
+    { href: "/gallery", label: "Gallery" },
     { href: "/contact", label: "Contact Us" },
   ];
 
   return (
     <div className="w-full relative">
       {/* TOP BAR */}
-      <div className="w-full bg-white text-gray-700 border-b">
-        <div className="max-w-[1640px] mx-auto px-8 flex justify-between items-center text-sm py-2">
-          <div className="flex items-center gap-4">
-            <div className="flex items-center gap-2">
-              <IoIosCall className="text-[#BA8E2D]" />
-              <span className="font-medium">(813) 444-2817</span>
-            </div>
-
-            <p className="hidden md:block text-gray-600">
-              Call a law firm that cares, available 24/7 for a free
-              consultation.
-            </p>
+      <div className="w-full bg-white border-b">
+        <div className="max-w-[1640px] mx-auto px-6 md:px-8 flex justify-between items-center text-sm py-2">
+          <div className="flex items-center gap-3 text-gray-700">
+            <IoIosCall className="text-[#FC860A]" />
+            <span className="font-medium">+1 838-838-8323</span>
+            <span className="hidden md:inline text-gray-500">
+              Professional Survey & Engineering Services
+            </span>
           </div>
 
           <Link
             href="/contact"
-            className="bg-[#BA8E2D] text-white px-4 py-3 rounded-sm hover:bg-yellow-700 transition"
+            className="bg-[#FC860A] text-white px-4 py-2 rounded-sm hover:bg-orange-600 transition"
           >
-            Book an Appointment
+            Get a Quote
           </Link>
         </div>
       </div>
 
       {/* MAIN NAVBAR */}
       <header
-        className={`transition-all duration-700 ${
+        className={`transition-all duration-500 ${
           isSticky
-            ? "fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-md shadow z-50"
+            ? "fixed top-0 left-0 right-0 bg-white/95 backdrop-blur shadow z-50"
             : "relative bg-white"
         }`}
       >
-        <div className="max-w-[1640px] mx-auto px-8 py-4 flex justify-between items-center relative">
+        <div className="max-w-[1640px] mx-auto px-6 md:px-8 py-4 flex justify-between items-center">
           {/* LOGO */}
           <Link href="/" className="flex items-center">
             <Image
@@ -70,48 +71,44 @@ const Navbar: React.FC = () => {
               alt="Logo"
               width={1000}
               height={500}
-              className="w-[180px] md:w-[240px] h-auto"
+              className="w-[170px] md:w-[230px] h-auto"
             />
           </Link>
 
           {/* DESKTOP MENU */}
-          <nav className="hidden md:flex gap-8 text-gray-800 font-medium items-center">
+          <nav className="hidden md:flex gap-8 font-medium text-gray-800 items-center">
             {navItems.map((item) =>
               item.dropdown ? (
                 <div key={item.href} className="relative group">
-                  {/* CLICKABLE MAIN LINK */}
                   <Link
                     href={item.href}
-                    className={`flex items-center gap-1 hover:text-yellow-700 transition ${
-                      pathname === item.href ? "text-yellow-700 underline" : ""
+                    className={`flex items-center gap-1 hover:text-[#FC860A] ${
+                      pathname === item.href ? "text-[#FC860A] underline" : ""
                     }`}
                   >
                     {item.label}
-                    <ChevronDown size={16} className="mt-[2px]" />
+                    <ChevronDown size={16} />
                   </Link>
 
                   {/* DROPDOWN */}
-                  <div
-                    className="
-                      absolute left-0 top-[calc(100%+10px)]
-                      w-[220px] bg-white shadow-lg rounded-sm
-                      opacity-0 invisible 
-                      group-hover:opacity-100 group-hover:visible 
-                      transition-all duration-300
-                      py-2 z-50
-                    "
-                  >
+                  <div className="absolute left-0 top-full mt-3 w-[240px] bg-white shadow-lg rounded-sm opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-50 py-2">
                     <Link
-                      href="/practice#personal-injury"
+                      href="/services/rtk-survey"
                       className="block px-4 py-2 hover:bg-gray-100"
                     >
-                      Personal Injury
+                      RTK Land Survey
                     </Link>
                     <Link
-                      href="/practice#criminal-defense"
+                      href="/services/digital-survey"
                       className="block px-4 py-2 hover:bg-gray-100"
                     >
-                      Criminal Defense
+                      Digital Land Survey
+                    </Link>
+                    <Link
+                      href="/services/soil-test"
+                      className="block px-4 py-2 hover:bg-gray-100"
+                    >
+                      Soil Test & Geotechnical
                     </Link>
                   </div>
                 </div>
@@ -119,8 +116,8 @@ const Navbar: React.FC = () => {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`hover:text-yellow-700 transition ${
-                    pathname === item.href ? "text-yellow-700 underline" : ""
+                  className={`hover:text-[#FC860A] transition ${
+                    pathname === item.href ? "text-[#FC860A] underline" : ""
                   }`}
                 >
                   {item.label}
@@ -129,74 +126,64 @@ const Navbar: React.FC = () => {
             )}
           </nav>
 
-          {/* MOBILE MENU BUTTON */}
+          {/* MOBILE BUTTON */}
           <button
             className="md:hidden"
             onClick={() => setMobileOpen(!mobileOpen)}
           >
             {mobileOpen ? <X size={26} /> : <Menu size={26} />}
           </button>
+        </div>
 
-          {/* MOBILE MENU */}
-          {mobileOpen && (
-            <div className="md:hidden absolute top-full left-0 w-full bg-white px-8 py-4 space-y-4 border-t shadow z-40">
-              {navItems.map((item) =>
-                item.dropdown ? (
-                  <div key={item.href}>
-                    <button
-                      className="w-full flex justify-between items-center text-gray-700"
-                      onClick={() => setPracticeOpen(!practiceOpen)}
-                    >
-                      {item.label}
-                      <ChevronDown
-                        className={`${
-                          practiceOpen ? "rotate-180" : ""
-                        } transition`}
-                      />
-                    </button>
-
-                    {/* MOBILE DROPDOWN */}
-                    {practiceOpen && (
-                      <div className="ml-4 mt-2 space-y-2">
-                        <Link
-                          href="/practice#personal-injury"
-                          onClick={() => setMobileOpen(false)}
-                          className="block text-gray-600"
-                        >
-                          Personal Injury
-                        </Link>
-                        <Link
-                          href="/practice#criminal-defense"
-                          onClick={() => setMobileOpen(false)}
-                          className="block text-gray-600"
-                        >
-                          Criminal Defense
-                        </Link>
-                      </div>
-                    )}
-                  </div>
-                ) : (
-                  <Link
-                    key={item.href}
-                    href={item.href}
-                    onClick={() => setMobileOpen(false)}
-                    className={`block ${
-                      pathname === item.href
-                        ? "text-yellow-700"
-                        : "text-gray-700"
-                    }`}
+        {/* MOBILE MENU */}
+        {mobileOpen && (
+          <div className="md:hidden bg-white border-t shadow px-6 py-4 space-y-4">
+            {navItems.map((item) =>
+              item.dropdown ? (
+                <div key={item.href}>
+                  <button
+                    className="w-full flex justify-between items-center font-medium"
+                    onClick={() => setServicesOpen(!servicesOpen)}
                   >
                     {item.label}
-                  </Link>
-                )
-              )}
-            </div>
-          )}
-        </div>
+                    <ChevronDown
+                      className={`transition ${
+                        servicesOpen ? "rotate-180" : ""
+                      }`}
+                    />
+                  </button>
+
+                  {servicesOpen && (
+                    <div className="ml-4 mt-2 space-y-2 text-gray-600">
+                      <Link href="/services/rtk-survey">RTK Land Survey</Link>
+                      <Link href="/services/digital-survey">
+                        Digital Land Survey
+                      </Link>
+                      <Link href="/services/soil-test">
+                        Soil Test & Geotechnical
+                      </Link>
+                    </div>
+                  )}
+                </div>
+              ) : (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  onClick={() => setMobileOpen(false)}
+                  className={`block font-medium ${
+                    pathname === item.href ? "text-[#FC860A]" : "text-gray-700"
+                  }`}
+                >
+                  {item.label}
+                </Link>
+              )
+            )}
+          </div>
+        )}
       </header>
 
-      {/* Spacer for sticky */}
-      {isSticky && <div className="h-[80px]" />}
+      {/* Sticky Spacer */}
+      {isSticky && <div className="h-[88px]" />}
     </div>
   );
 };

@@ -39,14 +39,14 @@ const Video = () => {
                   onClick={() => setOpenModal(true)}
                   className="relative w-16 lg:w-24 h-16 lg:h-24 flex justify-center items-center cursor-pointer"
                 >
-                  <span className="absolute inset-0 rounded-full bg-[#BA8E2D] animate-ping-strong"></span>
-                  <span className="absolute inset-0 rounded-full bg-[#BA8E2D]"></span>
+                  <span className="absolute inset-0 rounded-full bg-[#FC860A] animate-ping-strong"></span>
+                  <span className="absolute inset-0 rounded-full bg-[#FC860A]"></span>
                   <FaPlay size={30} color="#fff" className="relative z-10" />
                 </div>
               </div>
 
               {/* Text section */}
-              <div className="flex flex-col gap-4 max-w-3xl w-full bg-[#BA8E2D] p-10 rounded-md">
+              <div className="flex flex-col gap-4 max-w-3xl w-full bg-[#FC860A] p-10 rounded-md">
                 <Reveal y={100} opacityFrom={0} duration={3}>
                   <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-snug md:leading-tight">
                     We’re here to defend your rights and help you resolve your

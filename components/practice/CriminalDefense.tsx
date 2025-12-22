@@ -9,7 +9,10 @@ import { CriminalInjuryServices } from "@/config/data";
 
 export default function CriminalDefense() {
   return (
-    <section className="w-full px-8 py-8 md:py-16 bg-[#F9F9F9] " id="criminal-defense">
+    <section
+      className="w-full px-8 py-8 md:py-16 bg-[#F9F9F9] "
+      id="criminal-defense"
+    >
       <div className="max-w-[1640px] mx-auto">
         {/* Header */}
         <div className="flex flex-col items-center justify-center mb-12 max-w-3xl mx-auto">
@@ -37,9 +40,9 @@ export default function CriminalDefense() {
                 href={`/practice/${service?.slug}`}
                 className="block h-full"
               >
-                <div className="group bg-white hover:bg-[#BA8E2D] duration-300 rounded-2xl shadow-sm hover:shadow-md transition p-6 lg:p-10 flex flex-col items-center text-center border border-gray-100 h-full cursor-pointer hover:scale-105 transform ">
+                <div className="group bg-white hover:bg-[#FC860A] duration-300 rounded-2xl shadow-sm hover:shadow-md transition p-6 lg:p-10 flex flex-col items-center text-center border border-gray-100 h-full cursor-pointer hover:scale-105 transform ">
                   <div
-                    className="w-16 h-16 rounded-xl overflow-hidden flex justify-center items-center shadow-lg text-[#BA8E2D]
+                    className="w-16 h-16 rounded-xl overflow-hidden flex justify-center items-center shadow-lg text-[#FC860A]
                   group-hover:bg-white duration-300"
                   >
                     <FaBook size={24} />

@@ -12,7 +12,7 @@ export default function Expect() {
           <Reveal tag="h2" y={100} opacityFrom={0} duration={3}>
             <h2 className="text-3xl md:text-4xl font-bold text-black text-center ">
               What You Can Expect from
-              <span className="text-[#BA8E2D]  font-extrabold ms-3">
+              <span className="text-[#FC860A]  font-extrabold ms-3">
                 McCulloch Law, P.A.
               </span>
             </h2>

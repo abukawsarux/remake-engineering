@@ -63,8 +63,8 @@ const PracticeDetails = () => {
                       <span
                         className="
           text-xl 
-          group-hover:text-[#BA8E2D]
-          group-active:text-[#BA8E2D]
+          group-hover:text-[#FC860A]
+          group-active:text-[#FC860A]
           transition-colors duration-200
         "
                       >
@@ -74,8 +74,8 @@ const PracticeDetails = () => {
                       <p
                         className="
           text-base font-semibold text-[#333]
-          group-hover:text-[#BA8E2D]
-          group-active:text-[#BA8E2D]
+          group-hover:text-[#FC860A]
+          group-active:text-[#FC860A]
           transition-colors duration-200
         "
                       >
@@ -117,8 +117,8 @@ const PracticeDetails = () => {
                       <span
                         className="
           text-xl 
-          group-hover:text-[#BA8E2D]
-          group-active:text-[#BA8E2D]
+          group-hover:text-[#FC860A]
+          group-active:text-[#FC860A]
           transition-colors duration-200
         "
                       >
@@ -128,8 +128,8 @@ const PracticeDetails = () => {
                       <p
                         className="
           text-base font-semibold text-[#333]
-          group-hover:text-[#BA8E2D]
-          group-active:text-[#BA8E2D]
+          group-hover:text-[#FC860A]
+          group-active:text-[#FC860A]
           transition-colors duration-200
         "
                       >

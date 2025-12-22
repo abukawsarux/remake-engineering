@@ -86,7 +86,7 @@ export default function About() {
               <Reveal tag="h2" y={100} opacityFrom={0} duration={3}>
                 <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
                   McCulloch Law, P.A.{" "}
-                  <p className="text-[#BA8E2D]  font-extrabold">
+                  <p className="text-[#FC860A]  font-extrabold">
                     Over 15 Years Of Experience{" "}
                   </p>
                 </h2>
@@ -106,38 +106,38 @@ export default function About() {
                 <div className="grid grid-cols-2 gap-4 mt-4 mb-8 ">
                   <ul className="space-y-3">
                     <li className="flex items-center gap-2">
-                      <IoMdCheckboxOutline size={24} color="#BA8E2D" />
+                      <IoMdCheckboxOutline size={24} color="#FC860A" />
                       Former State Prosecutor
                     </li>
                     <li className="flex items-center gap-2">
-                      <IoMdCheckboxOutline size={24} color="#BA8E2D" />
+                      <IoMdCheckboxOutline size={24} color="#FC860A" />
                       Experienced Trial Attorney
                     </li>
                     <li className="flex items-center gap-2">
-                      <IoMdCheckboxOutline size={24} color="#BA8E2D" />
+                      <IoMdCheckboxOutline size={24} color="#FC860A" />
                       Proven Case Results
                     </li>
                     <li className="flex items-center gap-2">
-                      <IoMdCheckboxOutline size={24} color="#BA8E2D" />
+                      <IoMdCheckboxOutline size={24} color="#FC860A" />
                       Personalized Legal Strategies
                     </li>
                   </ul>
 
                   <ul className="space-y-3">
                     <li className="flex items-center gap-2">
-                      <IoMdCheckboxOutline size={24} color="#BA8E2D" />
+                      <IoMdCheckboxOutline size={24} color="#FC860A" />
                       24/7 Client Support
                     </li>
                     <li className="flex items-center gap-2">
-                      <IoMdCheckboxOutline size={24} color="#BA8E2D" />
+                      <IoMdCheckboxOutline size={24} color="#FC860A" />
                       Award-Winning Representation
                     </li>
                     <li className="flex items-center gap-2">
-                      <IoMdCheckboxOutline size={24} color="#BA8E2D" />
+                      <IoMdCheckboxOutline size={24} color="#FC860A" />
                       Free Consulting
                     </li>
                     <li className="flex items-center gap-2">
-                      <IoMdCheckboxOutline size={24} color="#BA8E2D" />
+                      <IoMdCheckboxOutline size={24} color="#FC860A" />
                       Strong Court Representation
                     </li>
                   </ul>
@@ -146,7 +146,7 @@ export default function About() {
               <Reveal y={100} opacityFrom={0} duration={3}>
                 <Link
                   href="/contact"
-                  className="px-6 py-4 bg-[#BA8E2D] text-white inline-flex items-center gap-2 rounded-sm hover:bg-yellow-700 mt-4 "
+                  className="px-6 py-4 bg-[#FC860A] text-white inline-flex items-center gap-2 rounded-sm hover:bg-yellow-700 mt-4 "
                 >
                   Free Consultation <IoIosArrowForward />
                 </Link>

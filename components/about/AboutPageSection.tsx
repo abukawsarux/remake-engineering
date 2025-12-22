@@ -12,7 +12,7 @@ export default function AboutPageSection() {
         <Reveal tag="h2" y={100} opacityFrom={0} duration={3}>
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-black mb-6 text-center max-w-5xl mx-auto lg:mb-10">
             What Makes Attorney Drew{" "}
-            <span className="text-[#BA8E2D]  font-extrabold">
+            <span className="text-[#FC860A]  font-extrabold">
               McCulloch Uniquely Qualified
             </span>{" "}
             To Represent You?
@@ -148,7 +148,7 @@ export default function AboutPageSection() {
                 over 100 cases to verdict. Following more than four years with
                 the State Attorney’s Office, in 2014, Attorney Drew opened his
                 solo practice, McCulloch Law P.A. in Tampa, FL with a focus on 
-                <span className="text-[#BA8E2D]">
+                <span className="text-[#FC860A]">
                   Criminal Defense, DUIs, and Personal Injury
                 </span>
                 . Today, McCulloch Law P.A. has a focus on assisting victims

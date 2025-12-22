@@ -56,7 +56,6 @@ const page = async ({ params }) => {
       <section className="w-full px-8 py-8 md:py-16 bg-white">
         <div className="max-w-[1640px] mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-6 gap-6">
-
             {/* -------- MAIN CONTENT -------- */}
             <div className="md:col-span-4 flex flex-col items-start justify-start mb-8 w-full">
               <Image
@@ -74,7 +73,6 @@ const page = async ({ params }) => {
 
             {/* -------- SIDEBAR -------- */}
             <div className="md:col-span-2 flex flex-col items-start gap-5 justify-start mb-8 md:pl-8 w-full">
-
               {/* Search Box */}
               <div className="bg-[#F3F3F3] p-6 w-full">
                 <input
@@ -86,7 +84,9 @@ const page = async ({ params }) => {
 
               {/* PERSONAL INJURY LINKS */}
               <div className="bg-[#F3F3F3] p-6 w-full">
-                <h2 className="text-2xl font-bold text-[#333] mb-2">Personal Injury</h2>
+                <h2 className="text-2xl font-bold text-[#333] mb-2">
+                  Personal Injury
+                </h2>
                 <div className="w-24 h-[3px] bg-[#C7A34B] mb-6"></div>
 
                 <div className="space-y-6">
@@ -96,8 +96,10 @@ const page = async ({ params }) => {
                       href={`/practice/${item.slug}`}
                       className="group flex items-center gap-3 cursor-pointer transition-all duration-200"
                     >
-                      <span className="text-xl group-hover:text-[#BA8E2D]">»</span>
-                      <p className="text-base font-semibold text-[#333] group-hover:text-[#BA8E2D]">
+                      <span className="text-xl group-hover:text-[#FC860A]">
+                        »
+                      </span>
+                      <p className="text-base font-semibold text-[#333] group-hover:text-[#FC860A]">
                         {item.title}
                       </p>
                     </Link>
@@ -107,7 +109,9 @@ const page = async ({ params }) => {
 
               {/* CRIMINAL INJURY LINKS */}
               <div className="bg-[#F3F3F3] p-6 w-full">
-                <h2 className="text-2xl font-bold text-[#333] mb-2">Criminal Injury</h2>
+                <h2 className="text-2xl font-bold text-[#333] mb-2">
+                  Criminal Injury
+                </h2>
                 <div className="w-24 h-[3px] bg-[#C7A34B] mb-6"></div>
 
                 <div className="space-y-6">
@@ -117,15 +121,16 @@ const page = async ({ params }) => {
                       href={`/practice/${item.slug}`}
                       className="group flex items-center gap-3 cursor-pointer transition-all duration-200"
                     >
-                      <span className="text-xl group-hover:text-[#BA8E2D]">»</span>
-                      <p className="text-base font-semibold text-[#333] group-hover:text-[#BA8E2D]">
+                      <span className="text-xl group-hover:text-[#FC860A]">
+                        »
+                      </span>
+                      <p className="text-base font-semibold text-[#333] group-hover:text-[#FC860A]">
                         {item.title}
                       </p>
                     </Link>
                   ))}
                 </div>
               </div>
-
             </div>
           </div>
         </div>

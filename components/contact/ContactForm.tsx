@@ -178,7 +178,7 @@ const ContactForm = () => {
                           href={url}
                           key={index}
                           target="_blank"
-                          className="w-10 h-10 rounded-full bg-[#BA8E2D] flex items-center justify-center"
+                          className="w-10 h-10 rounded-full bg-[#FC860A] flex items-center justify-center"
                         >
                           <Icon />
                         </Link>
@@ -311,7 +311,7 @@ const ContactForm = () => {
                     <button
                       type="submit"
                       disabled={loading}
-                      className={`w-full bg-[#BA8E2D] text-white font-semibold py-4 rounded-md ${
+                      className={`w-full bg-[#FC860A] text-white font-semibold py-4 rounded-md ${
                         loading
                           ? "opacity-50 cursor-not-allowed"
                           : "hover:bg-yellow-400"

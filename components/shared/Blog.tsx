@@ -32,7 +32,7 @@ export default async function Blog() {
 
             <Reveal tag="h2" y={100} opacityFrom={0} duration={3}>
               <h2 className="text-3xl md:text-4xl font-bold text-black text-center">
-                Top <span className="text-[#BA8E2D]">Blogs</span> Related To
+                Top <span className="text-[#FC860A]">Blogs</span> Related To
                 Law, Cases & Consulting
               </h2>
             </Reveal>
@@ -61,7 +61,7 @@ export default async function Blog() {
 
                     <div className="p-6 text-start flex flex-col justify-between flex-grow gap-4">
                       <div>
-                        <h3 className="text-lg font-semibold group-hover:text-[#BA8E2D] duration-300">
+                        <h3 className="text-lg font-semibold group-hover:text-[#FC860A] duration-300">
                           {blog.title}
                         </h3>
 
@@ -77,7 +77,7 @@ export default async function Blog() {
                       <div>
                         <Link
                           href={`/blogs/${blog.slug}`}
-                          className="px-6 py-4 bg-[#BA8E2D] text-white inline-flex items-center gap-2 rounded-sm hover:bg-white hover:text-[#BA8E2D] mt-4 duration-300"
+                          className="px-6 py-4 bg-[#FC860A] text-white inline-flex items-center gap-2 rounded-sm hover:bg-white hover:text-[#FC860A] mt-4 duration-300"
                         >
                           Read More <IoIosArrowForward />
                         </Link>

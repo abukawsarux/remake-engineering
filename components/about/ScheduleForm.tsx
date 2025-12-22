@@ -69,7 +69,7 @@ const ScheduleForm = () => {
                     <div className="text-white flex gap-2 mt-4">
                       <Link
                         href="#"
-                        className="w-10 h-10 rounded-full bg-[#BA8E2D] flex items-center justify-center"
+                        className="w-10 h-10 rounded-full bg-[#FC860A] flex items-center justify-center"
                         aria-label="Facebook"
                       >
                         <FaFacebookF />
@@ -77,7 +77,7 @@ const ScheduleForm = () => {
 
                       <Link
                         href="#"
-                        className="w-10 h-10 rounded-full bg-[#BA8E2D] flex items-center justify-center"
+                        className="w-10 h-10 rounded-full bg-[#FC860A] flex items-center justify-center"
                         aria-label="LinkedIn"
                       >
                         <FaLinkedinIn />
@@ -85,7 +85,7 @@ const ScheduleForm = () => {
 
                       <Link
                         href="#"
-                        className="w-10 h-10 rounded-full bg-[#BA8E2D] flex items-center justify-center"
+                        className="w-10 h-10 rounded-full bg-[#FC860A] flex items-center justify-center"
                         aria-label="Instagram"
                       >
                         <FaInstagram />
@@ -94,7 +94,7 @@ const ScheduleForm = () => {
                       {/* Avvo (no official icon in react-icons – using FaBalanceScale as the legal symbol) */}
                       <Link
                         href="#"
-                        className="w-10 h-10 rounded-full bg-[#BA8E2D] flex items-center justify-center"
+                        className="w-10 h-10 rounded-full bg-[#FC860A] flex items-center justify-center"
                         aria-label="Avvo"
                       >
                         <FaBalanceScale />
@@ -103,7 +103,7 @@ const ScheduleForm = () => {
                       {/* Yelp */}
                       <Link
                         href="#"
-                        className="w-10 h-10 rounded-full bg-[#BA8E2D] flex items-center justify-center"
+                        className="w-10 h-10 rounded-full bg-[#FC860A] flex items-center justify-center"
                         aria-label="Yelp"
                       >
                         <FaYelp />
@@ -112,7 +112,7 @@ const ScheduleForm = () => {
                       {/* Google My Business (using FaGoogle as closest match) */}
                       <Link
                         href="#"
-                        className="w-10 h-10 rounded-full bg-[#BA8E2D] flex items-center justify-center"
+                        className="w-10 h-10 rounded-full bg-[#FC860A] flex items-center justify-center"
                         aria-label="Google My Business"
                       >
                         <FaGoogle />
@@ -121,7 +121,7 @@ const ScheduleForm = () => {
                       {/* TikTok */}
                       <Link
                         href="#"
-                        className="w-10 h-10 rounded-full bg-[#BA8E2D] flex items-center justify-center"
+                        className="w-10 h-10 rounded-full bg-[#FC860A] flex items-center justify-center"
                         aria-label="TikTok"
                       >
                         <FaTiktok />
@@ -177,7 +177,7 @@ const ScheduleForm = () => {
                     {/* Button */}
                     <button
                       type="submit"
-                      className="w-full bg-[#BA8E2D] text-white font-semibold py-4 rounded-md"
+                      className="w-full bg-[#FC860A] text-white font-semibold py-4 rounded-md"
                     >
                       Book an Appointment
                     </button>
