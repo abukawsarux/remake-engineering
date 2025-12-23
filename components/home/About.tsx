@@ -146,7 +146,7 @@ export default function About() {
               <Reveal y={100} opacityFrom={0} duration={3}>
                 <Link
                   href="/contact"
-                  className="px-6 py-4 bg-[#FC860A] text-white inline-flex items-center gap-2 rounded-sm hover:bg-yellow-700 mt-4 "
+                  className="px-6 py-4 bg-[#FC860A] text-white inline-flex items-center gap-2 rounded-sm hover:bg-orange-600 mt-4 "
                 >
                   Free Consultation <IoIosArrowForward />
                 </Link>

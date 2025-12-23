@@ -21,16 +21,16 @@ const Navbar: React.FC = () => {
 
   const navItems = [
     { href: "/", label: "Home" },
-    { href: "/about", label: "About Us" },
+    { href: "/", label: "About Us" },
     {
-      href: "/services",
+      href: "/",
       label: "Our Services",
       dropdown: true,
     },
-    { href: "/equipment", label: "Our Equipment" },
-    { href: "/projects", label: "Our Projects" },
-    { href: "/gallery", label: "Gallery" },
-    { href: "/contact", label: "Contact Us" },
+    { href: "/", label: "Our Equipment" },
+    { href: "/", label: "Our Projects" },
+    { href: "/", label: "Gallery" },
+    { href: "/", label: "Contact Us" },
   ];
 
   return (
@@ -48,7 +48,7 @@ const Navbar: React.FC = () => {
 
           <Link
             href="/contact"
-            className="bg-[#FC860A] text-white px-4 py-2 rounded-sm hover:bg-orange-600 transition"
+            className="px-6 py-4 bg-[#FC860A] text-white rounded-sm hover:bg-orange-600 transition"
           >
             Get a Quote
           </Link>
@@ -71,7 +71,7 @@ const Navbar: React.FC = () => {
               alt="Logo"
               width={1000}
               height={500}
-              className="w-[170px] md:w-[230px] h-auto"
+              className="w-[170px] md:w-[190px] h-auto"
             />
           </Link>
 
