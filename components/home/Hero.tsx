@@ -70,7 +70,7 @@ const HeroSection = () => {
               {/* TEXT */}
               <div className="flex flex-col gap-6  w-full mb-14 lg:mb-20 xl:mb-24">
                 <Reveal y={100} opacityFrom={0} duration={3}>
-                  <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white  border-b-4 border-[#FC860A] pb-1 inline-block">
+                  <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-white  border-b-4 border-[#FC860A] pb-1 inline-block">
                     {titles[index].substring(0, subIndex)}
                     <span
                       className={`${
