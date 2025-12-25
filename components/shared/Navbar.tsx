@@ -1,6 +1,6 @@
 "use client";
 
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -10,7 +10,6 @@ import { IoIosCall } from "react-icons/io";
 const Navbar: React.FC = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
-  const [servicesOpen, setServicesOpen] = useState(false);
   const pathname = usePathname();
 
   useEffect(() => {
@@ -21,16 +20,12 @@ const Navbar: React.FC = () => {
 
   const navItems = [
     { href: "/", label: "Home" },
-    { href: "/", label: "About Us" },
-    {
-      href: "/",
-      label: "Our Services",
-      dropdown: true,
-    },
-    { href: "/", label: "Our Equipment" },
-    { href: "/", label: "Our Projects" },
-    { href: "/", label: "Gallery" },
-    { href: "/", label: "Contact Us" },
+    { href: "/about", label: "About Us" },
+    { href: "/services", label: "Our Services" },
+    { href: "/equipment", label: "Our Equipment" },
+    { href: "/projects", label: "Our Projects" },
+    { href: "/gallery", label: "Gallery" },
+    { href: "/contact", label: "Contact Us" },
   ];
 
   return (
@@ -48,7 +43,7 @@ const Navbar: React.FC = () => {
 
           <Link
             href="/contact"
-            className="px-6 py-4 bg-[#FC860A] text-white rounded-sm hover:bg-orange-600 transition"
+            className="px-8 py-4 bg-[#FC860A] text-white rounded-sm hover:bg-orange-600 transition"
           >
             Get a Quote
           </Link>
@@ -77,53 +72,17 @@ const Navbar: React.FC = () => {
 
           {/* DESKTOP MENU */}
           <nav className="hidden md:flex gap-8 font-medium text-gray-800 items-center">
-            {navItems.map((item) =>
-              item.dropdown ? (
-                <div key={item.href} className="relative group">
-                  <Link
-                    href={item.href}
-                    className={`flex items-center gap-1 hover:text-[#FC860A] ${
-                      pathname === item.href ? "text-[#000000] underline" : ""
-                    }`}
-                  >
-                    {item.label}
-                    <ChevronDown size={16} />
-                  </Link>
-
-                  {/* DROPDOWN */}
-                  <div className="absolute left-0 top-full mt-3 w-[240px] bg-white shadow-lg rounded-sm opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-50 py-2">
-                    <Link
-                      href="/services/rtk-survey"
-                      className="block px-4 py-2 hover:bg-gray-100"
-                    >
-                      RTK Land Survey
-                    </Link>
-                    <Link
-                      href="/services/digital-survey"
-                      className="block px-4 py-2 hover:bg-gray-100"
-                    >
-                      Digital Land Survey
-                    </Link>
-                    <Link
-                      href="/services/soil-test"
-                      className="block px-4 py-2 hover:bg-gray-100"
-                    >
-                      Soil Test & Geotechnical
-                    </Link>
-                  </div>
-                </div>
-              ) : (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className={`hover:text-[#FC860A] transition ${
-                    pathname === item.href ? "text-[#FC860A] underline" : ""
-                  }`}
-                >
-                  {item.label}
-                </Link>
-              )
-            )}
+            {navItems.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className={`hover:text-[#FC860A] transition ${
+                  pathname === item.href ? "text-[#FC860A] underline" : ""
+                }`}
+              >
+                {item.label}
+              </Link>
+            ))}
           </nav>
 
           {/* MOBILE BUTTON */}
@@ -138,46 +97,18 @@ const Navbar: React.FC = () => {
         {/* MOBILE MENU */}
         {mobileOpen && (
           <div className="md:hidden bg-white border-t shadow px-6 py-4 space-y-4">
-            {navItems.map((item) =>
-              item.dropdown ? (
-                <div key={item.href}>
-                  <button
-                    className="w-full flex justify-between items-center font-medium"
-                    onClick={() => setServicesOpen(!servicesOpen)}
-                  >
-                    {item.label}
-                    <ChevronDown
-                      className={`transition ${
-                        servicesOpen ? "rotate-180" : ""
-                      }`}
-                    />
-                  </button>
-
-                  {servicesOpen && (
-                    <div className="ml-4 mt-2 space-y-2 text-gray-600">
-                      <Link href="/services/rtk-survey">RTK Land Survey</Link>
-                      <Link href="/services/digital-survey">
-                        Digital Land Survey
-                      </Link>
-                      <Link href="/services/soil-test">
-                        Soil Test & Geotechnical
-                      </Link>
-                    </div>
-                  )}
-                </div>
-              ) : (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  onClick={() => setMobileOpen(false)}
-                  className={`block font-medium ${
-                    pathname === item.href ? "text-[#FC860A]" : "text-gray-700"
-                  }`}
-                >
-                  {item.label}
-                </Link>
-              )
-            )}
+            {navItems.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                onClick={() => setMobileOpen(false)}
+                className={`block font-medium ${
+                  pathname === item.href ? "text-[#FC860A]" : "text-gray-700"
+                }`}
+              >
+                {item.label}
+              </Link>
+            ))}
           </div>
         )}
       </header>
