@@ -38,7 +38,7 @@ const Navbar: React.FC = () => {
       {/* TOP BAR */}
       <div className="w-full bg-white border-b">
         <div className="max-w-[1640px] mx-auto px-6 md:px-8 flex justify-between items-center text-sm py-2">
-          <div className="flex items-center gap-3 text-gray-700 text-base">
+          <div className="flex items-center gap-3 text-gray-700">
             <IoIosCall className="text-[#FC860A]" />
             <span className="font-medium">+1 838-838-8323</span>
             <span className="hidden md:inline text-gray-500">
@@ -48,7 +48,7 @@ const Navbar: React.FC = () => {
 
           <Link
             href="/contact"
-            className="bg-[#FC860A] text-white px-8 py-3 rounded-sm hover:bg-orange-600 transition text-base"
+            className="px-6 py-4 bg-[#FC860A] text-white rounded-sm hover:bg-orange-600 transition"
           >
             Get a Quote
           </Link>
@@ -71,7 +71,7 @@ const Navbar: React.FC = () => {
               alt="Logo"
               width={1000}
               height={500}
-              className="w-[170px] md:w-[200px] h-auto"
+              className="w-[170px] md:w-[190px] h-auto"
             />
           </Link>
 
