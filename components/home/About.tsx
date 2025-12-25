@@ -3,18 +3,19 @@ import Link from "next/link";
 import Reveal from "../motion/Reveal";
 import Stagger from "../motion/Stagger";
 import { IoIosArrowForward, IoMdCheckboxOutline } from "react-icons/io";
+import Partners from "./Partners";
 
 export default function About() {
   return (
     <section>
-      <section className="max-w-[1640px] mx-auto md:py-16 py-8 px-8">
+      <section className="max-w-[1640px] mx-auto md:pb-16 pb-8 px-8">
         <div className="grid lg:grid-cols-2 items-center gap-10 md:gap-6">
           {/* Left Image */}
           <div className=" overflow-hidden">
             <div className="lg:hidden">
               <Reveal x={-100} opacityFrom={0} duration={3}>
                 <Image
-                  src="/images/about/about.jpg"
+                  src="/images/about/about.png"
                   alt="Our Team"
                   className="w-auto h-auto "
                   width={1000}
@@ -25,7 +26,7 @@ export default function About() {
             <div className="lg:flex items-center gap-2 hidden ">
               <Reveal x={-100} opacityFrom={0} duration={3}>
                 <Image
-                  src="/images/about/new-folder/McCulloch-Law-1.png"
+                  src="/images/about/new-folder/part-1.png"
                   alt="Our Team"
                   className="w-auto h-auto "
                   width={1000}
@@ -35,7 +36,7 @@ export default function About() {
               <div className="flex flex-col items-center gap-2">
                 <Reveal y={-100} opacityFrom={0} duration={3}>
                   <Image
-                    src="/images/about/new-folder/McCulloch-Law-2.png"
+                    src="/images/about/new-folder/part-2.png"
                     alt="Our Team"
                     className="w-auto h-auto "
                     width={1000}
@@ -44,7 +45,7 @@ export default function About() {
                 </Reveal>
                 <Reveal y={100} opacityFrom={0} duration={3}>
                   <Image
-                    src="/images/about/new-folder/McCulloch-Law-3.png"
+                    src="/images/about/new-folder/part-3.png"
                     alt="Our Team"
                     className="w-auto h-auto "
                     width={1000}
@@ -56,14 +57,14 @@ export default function About() {
                 <Reveal x={100} opacityFrom={0} duration={3}>
                   <div className="flex flex-col items-center gap-2">
                     <Image
-                      src="/images/about/new-folder/McCulloch-Law-4.png"
+                      src="/images/about/new-folder/part-4.png"
                       alt="Our Team"
                       className="w-auto h-auto "
                       width={1000}
                       height={470}
                     />{" "}
                     <Image
-                      src="/images/about/new-folder/McCulloch-Law-5.png"
+                      src="/images/about/new-folder/part-5.png"
                       alt="Our Team"
                       className="w-auto h-auto "
                       width={1000}
@@ -83,72 +84,83 @@ export default function About() {
                   About Us
                 </p>
               </Reveal>
+
               <Reveal tag="h2" y={100} opacityFrom={0} duration={3}>
                 <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
-                  McCulloch Law, P.A.{" "}
-                  <p className="text-[#FC860A]  font-extrabold">
-                    Over 15 Years Of Experience{" "}
+                  Remake Engineering{" "}
+                  <p className="text-[#FC860A] ">
+                    Precision Survey & Soil Testing Experts
                   </p>
                 </h2>
               </Reveal>
+
               <Reveal tag="h2" y={100} opacityFrom={0} duration={3}>
                 <p className="text-gray-600 text-sm md:text-base leading-relaxed mb-4">
-                  McCulloch Law, P.A. proudly serves the Greater Tampa Bay Area,
-                  providing trusted legal representation in personal injury and
-                  criminal defense. Led by Attorney Drew McCulloch, a former
-                  state prosecutor with more than 15 years of experience, the
-                  firm is committed to protecting your rights, guiding you
-                  through complex legal matters, and helping you work toward the
-                  best possible outcome.
+                  Remake Engineering is a professional RTK Survey, Digital Land
+                  Survey, and Soil Testing agency providing accurate measurement
+                  and engineering solutions for residential, commercial, and
+                  government projects. We combine modern survey technology with
+                  practical field expertise to deliver reliable and precise
+                  results.
                 </p>
               </Reveal>
+
+              <Reveal tag="h2" y={100} opacityFrom={0} duration={3}>
+                <p className="text-gray-600 text-sm md:text-base leading-relaxed mb-4">
+                  Our team is committed to producing high-accuracy survey data,
+                  clear digital reports, and dependable soil analysis that help
+                  clients plan, design, and build with confidence.
+                </p>
+              </Reveal>
+
               <Reveal y={100} opacityFrom={0} duration={3}>
-                <div className="grid grid-cols-2 gap-4 mt-4 mb-8 ">
+                <div className="grid grid-cols-2 gap-4 mt-4 mb-8">
                   <ul className="space-y-3">
                     <li className="flex items-center gap-2">
                       <IoMdCheckboxOutline size={24} color="#FC860A" />
-                      Former State Prosecutor
+                      RTK & GNSS-Based Survey Technology
                     </li>
                     <li className="flex items-center gap-2">
                       <IoMdCheckboxOutline size={24} color="#FC860A" />
-                      Experienced Trial Attorney
+                      Experienced Survey Engineers
                     </li>
                     <li className="flex items-center gap-2">
                       <IoMdCheckboxOutline size={24} color="#FC860A" />
-                      Proven Case Results
+                      High-Accuracy Digital Mapping
                     </li>
                     <li className="flex items-center gap-2">
                       <IoMdCheckboxOutline size={24} color="#FC860A" />
-                      Personalized Legal Strategies
+                      Modern Survey Equipment
                     </li>
                   </ul>
 
                   <ul className="space-y-3">
                     <li className="flex items-center gap-2">
                       <IoMdCheckboxOutline size={24} color="#FC860A" />
-                      24/7 Client Support
+                      Soil Test & Geotechnical Expertise
                     </li>
                     <li className="flex items-center gap-2">
                       <IoMdCheckboxOutline size={24} color="#FC860A" />
-                      Award-Winning Representation
+                      Government & Private Project Experience
                     </li>
                     <li className="flex items-center gap-2">
                       <IoMdCheckboxOutline size={24} color="#FC860A" />
-                      Free Consulting
+                      Authority-Approved Survey Reports
                     </li>
                     <li className="flex items-center gap-2">
                       <IoMdCheckboxOutline size={24} color="#FC860A" />
-                      Strong Court Representation
+                      Client-Focused Professional Service
                     </li>
                   </ul>
                 </div>
               </Reveal>
+
               <Reveal y={100} opacityFrom={0} duration={3}>
                 <Link
-                  href="/contact"
-                  className="px-6 py-4 bg-[#FC860A] text-white inline-flex items-center gap-2 rounded-sm hover:bg-yellow-700 mt-4 "
+                  href="/about"
+                  className="px-8 py-4 bg-[#FC860A] text-white inline-flex items-center gap-2 rounded-sm hover:bg-orange-600 mt-4"
                 >
-                  Free Consultation <IoIosArrowForward />
+                  Read More <IoIosArrowForward />
                 </Link>
               </Reveal>
             </Stagger>
@@ -156,36 +168,7 @@ export default function About() {
         </div>
         <div>
           <Reveal y={100} opacityFrom={0} duration={3}>
-            <div className="flex flex-col md:flex-wrap lg:flex-row  mx-auto mt-16 gap-8 justify-center items-center">
-              <Image
-                src="/images/about/achivements-1.png"
-                alt=""
-                width={1000}
-                height={80}
-                className="  max-w-60"
-              />
-              <Image
-                src="/images/about/achivements-2.png"
-                alt=""
-                width={1000}
-                height={80}
-                className="  max-w-60"
-              />
-              <Image
-                src="/images/about/achivements-3.png"
-                alt=""
-                width={1000}
-                height={80}
-                className="  max-w-60"
-              />
-              <Image
-                src="/images/about/achivements-4.png"
-                alt=""
-                width={1000}
-                height={80}
-                className="  max-w-60"
-              />
-            </div>
+            <Partners />
           </Reveal>
         </div>
       </section>

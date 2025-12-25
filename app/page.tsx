@@ -6,7 +6,9 @@ import Testimonials from "@/components/shared/Testimonials";
 import Expect from "@/components/home/Expect";
 import Video from "@/components/home/Video";
 import Blog from "@/components/shared/Blog";
-import CaseSection from "@/components/home/CaseSection";
+import EquipmentTechnology from "@/components/home/EquipmentTechnology";
+import OurProjects from "@/components/home/OurProjects";
+import CallToAction from "@/components/home/CallToAction";
 
 export default function Home() {
   return (
@@ -14,11 +16,12 @@ export default function Home() {
       <Hero />
       <About />
       <Services />
+      <EquipmentTechnology />
+      <OurProjects />
       <Testimonials />
-      <CaseSection />
-      <Expect />
+
       <Video />
-      <Blog />
-    </> 
+      <CallToAction />
+    </>
   );
 }

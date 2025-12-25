@@ -1,5 +1,6 @@
 "use client";
 
+import { TbRulerMeasure } from "react-icons/tb";
 import Reveal from "../motion/Reveal";
 import Stagger from "../motion/Stagger";
 import Link from "next/link";
@@ -7,52 +8,40 @@ import { FaBook } from "react-icons/fa6";
 
 const services = [
   {
-    title: "Drug Crimes",
+    title: "RTK Land Survey",
     description:
-      "Experienced defense for drug charges of all levels—protecting your rights, challenging evidence, and fighting for reduced penalties or dismissal.",
-    slug: "drug-crimes",
+      "High-precision land measurement using RTK and GNSS technology to ensure accurate boundary, area, and location data.",
+    slug: "rtk-land-survey",
   },
   {
-    title: "Fraud",
+    title: "Digital Land Survey",
     description:
-      "Accused of fraud? We deliver strategic, detail-driven representation to defend your rights and safeguard your future.",
-    slug: "fraud",
+      "Modern digital mapping and plotting services for land records, documentation, and authority-approved survey reports.",
+    slug: "digital-land-survey",
   },
   {
-    title: "Injunctions",
+    title: "Topographic Survey",
     description:
-      "We help clients obtain or defend against injunctions, ensuring your safety, property, and legal rights are fully protected.",
-    slug: "injunctions",
+      "Detailed terrain mapping including contours, elevations, and natural features for planning and construction projects.",
+    slug: "topographic-survey",
   },
   {
-    title: "Truck Accidents",
+    title: "Construction Layout Survey",
     description:
-      "Truck accidents can cause serious injury. We guide you through claims, protect your rights, and pursue maximum recovery.",
-    slug: "truck-accidents",
+      "Accurate layout, leveling, and alignment services to ensure structures are built exactly as per design specifications.",
+    slug: "construction-layout-survey",
   },
   {
-    title: "Motorcycle Accidents",
+    title: "Soil Test & Geotechnical Investigation",
     description:
-      "Motorcycle crashes can be life-changing. Our team fights for your rights, guiding you through claims and ensuring you get the justice you deserve.",
-    slug: "motorcycle-accidents",
+      "Comprehensive soil testing and geotechnical analysis to support safe foundation design and structural stability.",
+    slug: "soil-test-geotechnical",
   },
   {
-    title: "Dog Bites",
+    title: "Road & Infrastructure Survey",
     description:
-      "Dog bite injuries can be serious. Our experienced team fights to hold owners accountable and secure the recovery you deserve.",
-    slug: "dog-bites",
-  },
-  {
-    title: "Fatal Accidents",
-    description:
-      "When negligence causes an accidental death, we help families understand their rights, investigate the case, and pursue the compensation they deserve.",
-    slug: "fatal-accidents",
-  },
-  {
-    title: "Wrongful Death",
-    description:
-      "When a friend or family member passes away due to someone else’s negligence, our priority is to secure critical evidence, open a thorough investigation, and protect your family’s right to justice.",
-    slug: "wrongful-death",
+      "Professional survey solutions for roads, bridges, drainage systems, and utility infrastructure development.",
+    slug: "road-infrastructure-survey",
   },
 ];
 
@@ -65,13 +54,13 @@ export default function Services() {
           <Stagger>
             <Reveal y={100} opacityFrom={0} duration={3}>
               <p className="text-base font-normal text-[#666666] mb-4 border-b-1 border-primary inline-block">
-                Practice Areas
+                Our Services
               </p>
             </Reveal>
             <Reveal y={100} opacityFrom={0} duration={3}>
-              <h2 className="text-3xl md:text-4xl font-bold text-black text-center ">
-                Explore the Services We Offer in Personal Injury and Criminal
-                Defense
+              <h2 className="text-3xl md:text-4xl font-bold text-black text-center">
+                Professional RTK Survey, Digital Land Survey & Soil Testing
+                Services
               </h2>
             </Reveal>
           </Stagger>
@@ -87,7 +76,7 @@ export default function Services() {
                     className="w-16 h-16 rounded-xl overflow-hidden flex justify-center items-center shadow-lg text-[#FC860A]
                   group-hover:bg-white duration-300"
                   >
-                    <FaBook size={24} />
+                    <TbRulerMeasure size={24} />
                   </div>
                   <div className="pt-4 text-center">
                     <h3 className="text-lg font-semibold text-gray-900 group-hover:text-white duration-300">

@@ -57,9 +57,8 @@ const testimonials = [
 export default function Testimonials() {
   return (
     <section className="w-full px-8 py-8 md:py-16 ">
-      <div className="max-w-[1640px] mx-auto">
+      {/* <div className="max-w-[1640px] mx-auto">
         <div>
-          {/* Youtube Video framework  */}
           <div className="relative w-full max-w-5xl mx-auto rounded-2xl overflow-hidden shadow-[0_10px_20px_rgba(0,0,0,0.1)]">
             <iframe
               className="w-full h-[300px] md:h-[550px] lg:h-[600px]"
@@ -71,9 +70,9 @@ export default function Testimonials() {
             ></iframe>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div className="max-w-[1640px] mx-auto mt-10 lg:mt-16">
+      <div className="max-w-[1640px] mx-auto">
         {/* Header */}
         <div className="flex flex-col items-center justify-center mb-12 max-w-xl mx-auto">
           <Stagger>

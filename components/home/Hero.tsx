@@ -7,8 +7,14 @@ import Reveal from "@/components/motion/Reveal";
 import { IoIosArrowForward } from "react-icons/io";
 import { MdOutlinePersonalInjury } from "react-icons/md";
 import { PiHandshakeFill } from "react-icons/pi";
-import { FaAward } from "react-icons/fa6";
+import {
+  FaAward,
+  FaClock,
+  FaSatelliteDish,
+  FaUserCheck,
+} from "react-icons/fa6";
 import { IoGlobeOutline } from "react-icons/io5";
+import { FaUsersCog } from "react-icons/fa";
 
 const titles = [
   "Need Accurate Land & Soil Data?",
@@ -64,7 +70,7 @@ const HeroSection = () => {
               {/* TEXT */}
               <div className="flex flex-col gap-6  w-full mb-14 lg:mb-20 xl:mb-24">
                 <Reveal y={100} opacityFrom={0} duration={3}>
-                  <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white  border-b-4 border-[#FC860A] pb-1 inline-block">
+                  <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-white  border-b-4 border-[#FC860A] pb-1 inline-block">
                     {titles[index].substring(0, subIndex)}
                     <span
                       className={`${
@@ -94,7 +100,7 @@ const HeroSection = () => {
                 <Reveal y={100} opacityFrom={0}>
                   <Link
                     href="/contact"
-                    className="inline-flex items-center gap-2 px-6 py-4 bg-[#FC860A] text-white hover:bg-yellow-700 w-fit"
+                    className="inline-flex items-center gap-2 px-6 py-4 bg-[#FC860A] text-white hover:bg-orange-600 w-fit"
                   >
                     Request a Survey <IoIosArrowForward />
                   </Link>
@@ -124,24 +130,24 @@ const HeroSection = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {[
                 {
-                  icon: <MdOutlinePersonalInjury />,
-                  title: "Proven Results & Experience",
-                  desc: "Over 15 years of success in personal injury and criminal defense across Tampa Bay.",
+                  icon: <FaSatelliteDish />,
+                  title: "High Accuracy & Reliability",
+                  desc: "RTK and GNSS-based survey technology delivers precise land measurement, boundary accuracy, and dependable results.",
                 },
                 {
-                  icon: <IoGlobeOutline />,
-                  title: "Personalized Attention",
-                  desc: "Every client is treated like family with honest, one-on-one guidance.",
+                  icon: <FaUsersCog />,
+                  title: "Customized Survey Solutions",
+                  desc: "Every project is unique. We provide tailored digital land survey and soil testing services based on site requirements.",
                 },
                 {
-                  icon: <PiHandshakeFill />,
-                  title: "24/7 Availability",
-                  desc: "We’re here day or night to protect your rights when it matters most.",
+                  icon: <FaClock />,
+                  title: "Timely Project Delivery",
+                  desc: "Efficient field operations and reporting ensure fast turnaround times without compromising data quality.",
                 },
                 {
-                  icon: <FaAward />,
-                  title: "Award-Winning Team",
-                  desc: "Recognized by The National Trial Lawyers and Super Lawyers Rising Stars.",
+                  icon: <FaUserCheck />,
+                  title: "Certified Engineering Team",
+                  desc: "Experienced surveyors and geotechnical engineers delivering industry-standard, authority-accepted reports.",
                 },
               ].map((card, i) => (
                 <Reveal key={i} y={100} opacityFrom={0} duration={4}>

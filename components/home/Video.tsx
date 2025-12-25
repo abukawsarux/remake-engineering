@@ -46,31 +46,33 @@ const Video = () => {
               </div>
 
               {/* Text section */}
-              <div className="flex flex-col gap-4 max-w-3xl w-full bg-[#FC860A] p-10 rounded-md">
+              <div className="flex flex-col gap-4 max-w-3xl w-full bg-[#fff] p-10 rounded-md">
                 <Reveal y={100} opacityFrom={0} duration={3}>
-                  <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-snug md:leading-tight">
-                    We’re here to defend your rights and help you resolve your
-                    legal issues the right way.
+                  <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-black leading-snug md:leading-tight">
+                    We provide accurate land survey and soil testing services
+                    you can trust.
                   </h1>
                 </Reveal>
 
                 <Reveal y={100} opacityFrom={0} duration={3}>
-                  <p className="text-base font-normal text-white leading-snug md:leading-tight">
-                    Clients often come to me during some of the hardest moments
-                    of their lives. I focus on listening, understanding what
-                    they’re facing, and giving them clear guidance they can
-                    trust. Every case deserves careful preparation and honest
-                    communication.
+                  <p className="text-base font-normal text-black leading-snug md:leading-tight">
+                    Clients rely on us when precision matters most. We focus on
+                    understanding site conditions, project requirements, and
+                    technical challenges to deliver clear, reliable survey data
+                    and soil test results. Every project is handled with careful
+                    planning, modern equipment, and professional responsibility.
                   </p>
                 </Reveal>
 
                 <Reveal y={100} opacityFrom={0} duration={3}>
                   <div className="mt-5">
-                    <h3 className="text-xl md:text-2xl lg:text-3xl font-semibold text-white leading-snug md:leading-tight">
-                      Est. By <br /> Drew McCulloch, Esq.
+                    <h3 className="text-xl md:text-2xl lg:text-3xl font-semibold text-black leading-snug md:leading-tight">
+                      Est. By <br /> Experienced Survey & Geotechnical
+                      Professionals
                     </h3>
-                    <p className="text-base font-normal text-white leading-snug md:leading-tight mt-3">
-                      Personal Injury Attorney / Criminal Defense Attorney
+                    <p className="text-base font-normal text-gray-600 leading-snug md:leading-tight mt-3">
+                      Digital Land Survey • RTK Survey • Soil Test &
+                      Geotechnical Services
                     </p>
                   </div>
                 </Reveal>
@@ -109,7 +111,7 @@ const Video = () => {
               {/* YOUTUBE VIDEO */}
               <iframe
                 className="w-full h-[300px] md:h-[450px]"
-                src="https://www.youtube.com/embed/DVuPlw-59N8?autoplay=1"
+                src="https://www.youtube.com/embed/SPCewaAfqPA?si=dEiBKZprs7GHdM6X"
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
