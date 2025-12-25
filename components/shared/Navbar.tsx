@@ -83,7 +83,7 @@ const Navbar: React.FC = () => {
                   <Link
                     href={item.href}
                     className={`flex items-center gap-1 hover:text-[#FC860A] ${
-                      pathname === item.href ? "text-[#FC860A] underline" : ""
+                      pathname === item.href ? "text-[#000000] underline" : ""
                     }`}
                   >
                     {item.label}
