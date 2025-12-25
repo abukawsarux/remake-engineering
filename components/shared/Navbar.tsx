@@ -21,16 +21,16 @@ const Navbar: React.FC = () => {
 
   const navItems = [
     { href: "/", label: "Home" },
-    { href: "/about", label: "About Us" },
+    { href: "/", label: "About Us" },
     {
-      href: "/services",
+      href: "/",
       label: "Our Services",
       dropdown: true,
     },
-    { href: "/equipment", label: "Our Equipment" },
-    { href: "/projects", label: "Our Projects" },
-    { href: "/gallery", label: "Gallery" },
-    { href: "/contact", label: "Contact Us" },
+    { href: "/", label: "Our Equipment" },
+    { href: "/", label: "Our Projects" },
+    { href: "/", label: "Gallery" },
+    { href: "/", label: "Contact Us" },
   ];
 
   return (
