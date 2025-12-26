@@ -7,7 +7,7 @@ import { TbPhoneCall } from "react-icons/tb";
 
 export default function CallToAction() {
   return (
-    <section className="w-full px-8 py-16 md:py-24 bg-primary">
+    <section className="w-full px-8 py-16 md:py-24 bg-blue-950">
       <div className="max-w-[1640px] mx-auto">
         <div className="flex flex-col items-center text-center text-white max-w-3xl mx-auto">
           <Stagger>
@@ -28,7 +28,7 @@ export default function CallToAction() {
             <Reveal y={80} opacityFrom={0}>
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center bg-white text-primary font-semibold px-8 py-4 rounded-xl hover:bg-black hover:text-white transition duration-300 shadow-lg"
+                className="inline-flex items-center justify-center bg-primary hover:bg-orange-600 font-semibold px-8 py-4 rounded-xl  text-white transition duration-300 shadow-lg"
               >
                 Contact Us / Request a Quote
               </Link>

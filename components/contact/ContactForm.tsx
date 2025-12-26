@@ -121,22 +121,7 @@ const ContactForm = () => {
       icon: FaLinkedinIn,
       url: "https://www.linkedin.com/company/mcculloch-law-p-a/",
     },
-    {
-      icon: FaInstagram,
-      url: "https://www.instagram.com/mccullochlawtpa/",
-    },
-    {
-      icon: FaBalanceScale,
-      url: "",
-    },
-    {
-      icon: FaYelp,
-      url: "https://www.yelp.com/biz/mcculloch-law-p-a-tampa-10?utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)",
-    },
-    // {
-    //   icon: FaGoogle,
-    //   url: "https://g.page/yourgooglebusiness",
-    // },
+
     {
       icon: FaTiktok,
       url: "https://www.tiktok.com/@mcculllochlawtpa",
@@ -145,42 +130,77 @@ const ContactForm = () => {
 
   return (
     <div>
-      <div className="relative w-full flex items-center justify-center bg-[#7F8880]">
+      <div className="relative w-full flex items-center justify-center bg-white">
         <div className="max-w-[1640px] mx-auto px-8 w-full py-10 lg:py-20">
           <div className="relative">
             <div className="w-full flex flex-col md:flex-row items-center justify-evenly gap-6">
               {/* Left Text */}
               <Reveal tag="h2" y={100} opacityFrom={0} duration={3}>
-                <div className="flex flex-col gap-4 max-w-xl w-full rounded-md">
-                  <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white">
-                    Contact Us Today. Get in Touch With Drew, Esq.
+                <div className="flex flex-col gap-5 max-w-xl w-full rounded-md">
+                  {/* Title */}
+                  <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-black">
+                    Contact Us Today
                   </h1>
 
-                  <p className="text-base text-white">
-                    Reach out now for trusted legal advice. Our attorneys are
-                    ready to protect your rights.
+                  {/* Subtitle */}
+                  <p className="text-base md:text-lg text-gray-700">
+                    Get in touch with our team for professional support and
+                    clear guidance. We’re here to answer your questions and help
+                    you move forward with confidence.
                   </p>
 
-                  <div className="mt-5">
-                    <h3 className="text-xl md:text-2xl font-semibold text-white">
-                      Phone Number <br />
-                      <Link href="#">(813) 444-2817</Link>
+                  {/* Address */}
+                  <div>
+                    <h3 className="text-lg font-semibold text-black">
+                      Office Address
                     </h3>
+                    <p className="text-base text-gray-700 leading-relaxed">
+                      House No: 83/B, Block: B, Opposite side of Ekushey
+                      Hospital, Sugandha society, Mirzarpul, Muradpur,
+                      Chattogram. , Chittagong, Bangladesh
+                    </p>
+                  </div>
+                  {/* Phone */}
+                  <div>
+                    <h3 className="text-lg font-semibold text-black">
+                      Phone Number
+                    </h3>
+                    <Link
+                      href="tel:+8388388323"
+                      className="text-lg text-primary hover:underline"
+                    >
+                      +1 838-838-8323
+                    </Link>
                   </div>
 
-                  <div className="mt-5">
-                    <h3 className="text-xl md:text-2xl font-semibold text-white">
-                      Our Social Links
+                  {/* Email */}
+                  <div>
+                    <h3 className="text-lg font-semibold text-black">
+                      Email Address
                     </h3>
-                    <div className="text-white flex gap-2 mt-4">
+                    <Link
+                      href="mailto:remake.eng1@gmail.com"
+                      className="text-lg text-primary hover:underline"
+                    >
+                      remake.eng1@gmail.com
+                    </Link>
+                  </div>
+
+                  {/* Social Links */}
+                  <div className="mt-4">
+                    <h3 className="text-lg font-semibold text-black mb-3">
+                      Follow Us
+                    </h3>
+
+                    <div className="flex gap-3">
                       {socialLinks.map(({ icon: Icon, url }, index) => (
                         <Link
                           href={url}
                           key={index}
                           target="_blank"
-                          className="w-10 h-10 rounded-full bg-[#FC860A] flex items-center justify-center"
+                          className="w-10 h-10 rounded-full bg-[#FC860A] text-white flex items-center justify-center hover:scale-105 transition"
                         >
-                          <Icon />
+                          <Icon size={18} />
                         </Link>
                       ))}
                     </div>

@@ -24,31 +24,13 @@ const Navbar: React.FC = () => {
     { href: "/services", label: "Our Services" },
     { href: "/equipment", label: "Our Equipment" },
     { href: "/projects", label: "Our Projects" },
-    { href: "/gallery", label: "Gallery" },
+
     { href: "/contact", label: "Contact Us" },
   ];
 
   return (
     <div className="w-full relative">
       {/* TOP BAR */}
-      <div className="w-full bg-white border-b">
-        <div className="max-w-[1640px] mx-auto px-6 md:px-8 flex justify-between items-center text-sm py-2">
-          <div className="flex items-center gap-3 text-gray-700">
-            <IoIosCall className="text-[#FC860A]" />
-            <span className="font-medium">+1 838-838-8323</span>
-            <span className="hidden md:inline text-gray-500">
-              Professional Survey & Engineering Services
-            </span>
-          </div>
-
-          <Link
-            href="/contact"
-            className="px-8 py-4 bg-[#FC860A] text-white rounded-sm hover:bg-orange-600 transition"
-          >
-            Get a Quote
-          </Link>
-        </div>
-      </div>
 
       {/* MAIN NAVBAR */}
       <header
@@ -58,7 +40,7 @@ const Navbar: React.FC = () => {
             : "relative bg-white"
         }`}
       >
-        <div className="max-w-[1640px] mx-auto px-6 md:px-8 py-4 flex justify-between items-center">
+        <div className="max-w-[1640px] mx-auto px-6 md:px-8 py-2 flex justify-between items-center">
           {/* LOGO */}
           <Link href="/" className="flex items-center">
             <Image

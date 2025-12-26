@@ -1,23 +1,26 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, memo } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import Reveal from "@/components/motion/Reveal";
 
 interface BreadcrumbSectionProps {
   title: string;
-  subtitle: string;
+  subtitle?: string;
+  bgImage: string;
   className?: string;
 }
 
 const BreadcrumbSection: React.FC<BreadcrumbSectionProps> = ({
   title,
   subtitle,
-  className,
+  bgImage,
+  className = "",
 }) => {
   const [displayedText, setDisplayedText] = useState("");
+  const [isDone, setIsDone] = useState(false);
 
-  // ⌨️ Typewriter Logic
   useEffect(() => {
     let index = 0;
     const interval = setInterval(() => {
@@ -25,43 +28,52 @@ const BreadcrumbSection: React.FC<BreadcrumbSectionProps> = ({
       index++;
       if (index > title.length) {
         clearInterval(interval);
+        setIsDone(true);
       }
-    }, 70); // typing speed
+    }, 70);
 
     return () => clearInterval(interval);
   }, [title]);
 
   return (
     <section
-      className={`relative w-full min-h-[380px] flex items-center justify-center overflow-hidden ${className}`}
+      className={`relative w-full min-h-[450px] flex items-center justify-center ${className}`}
     >
       {/* Background Image */}
       <Image
-        src="/images/breadcrumb/breadcrumb.jpg"
-        alt="Background"
+        src={bgImage}
+        alt="Breadcrumb Background"
         fill
-        className="object-cover"
         priority
+        className="object-cover object-center"
       />
 
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-[#0d2c3b]/70" />
+      {/* Dark Overlay */}
+      <div className="absolute inset-0 bg-blue-950/80" />
 
       {/* Content */}
-      <Reveal y={100} opacityFrom={0} duration={3}>
-        <div className="relative z-10 text-center max-w-5xl px-6 py-7">
-          <h1 className="text-3xl md:text-5xl font-bold text-white mb-4">
-            {displayedText}
-            <span className="inline-block w-[3px] h-6 md:h-8 bg-white ml-1 animate-pulse"></span>
-          </h1>
+      <div className="relative z-10 max-w-[1640px] mx-auto px-6 lg:px-8 w-full">
+        <div className="flex flex-col items-center text-center gap-6 max-w-6xl mx-auto">
+          {/* Title */}
+          <Reveal y={80} opacityFrom={0} duration={1.6}>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-white leading-tight arya-font">
+              {displayedText}
+              {!isDone && <span className="animate-pulse">|</span>}
+            </h1>
+          </Reveal>
 
-          <p className="text-white text-base md:text-base leading-relaxed">
-            {subtitle}
-          </p>
+          {/* Subtitle */}
+          {subtitle && (
+            <Reveal y={60} opacityFrom={0} duration={1.8}>
+              <p className="max-w-6xl text-base md:text-lg text-white/90">
+                {subtitle}
+              </p>
+            </Reveal>
+          )}
         </div>
-      </Reveal>
+      </div>
     </section>
   );
 };
 
-export default BreadcrumbSection;
+export default memo(BreadcrumbSection);
