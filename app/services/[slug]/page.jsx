@@ -49,6 +49,7 @@ const page = async ({ params }) => {
       <style>{css}</style>
 
       <BreadcrumbSection
+        bgImage="/images/hero/hero-bg.png"
         title="Explore the Services We Offer in Personal Injury and Criminal Defense"
         subtitle="McCulloch Law, P.A. offers a focused range of services designed to support clients during some of the most challenging moments of their lives. The firm handles both personal injury and criminal defense matters with the same level of care and preparation."
       />
