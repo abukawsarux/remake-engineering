@@ -9,6 +9,7 @@ const page = async () => {
   return (
     <div>
       <BreadcrumbSection
+        bgImage="/images/hero/hero-bg.png"
         title="Testimonial"
         subtitle="We’ve had the privilege of helping many clients through their legal matters, and here is what they have to say about their experience. Hear from our clients."
       />

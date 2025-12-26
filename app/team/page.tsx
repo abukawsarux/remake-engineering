@@ -8,6 +8,7 @@ const page = () => {
   return (
     <>
       <BreadcrumbSection
+        bgImage="/images/hero/hero-bg.png"
         subtitle="Get Pain Relief Today With Tampa Bays Chiropractor"
         title="Tampa's Best"
       />
